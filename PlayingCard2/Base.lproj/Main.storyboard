@@ -17,14 +17,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view opaque="NO" contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="X1L-NJ-3Ls" customClass="PlayingCardView" customModule="PlayingCard2" customModuleProvider="target">
-                                <rect key="frame" x="16" y="149.66666666666669" width="361" height="577.66666666666652"/>
+                                <rect key="frame" x="16" y="149.66666666666674" width="361" height="577.66666666666652"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" priority="750" constant="800" id="EGM-dX-g25"/>
                                     <constraint firstAttribute="width" secondItem="X1L-NJ-3Ls" secondAttribute="height" multiplier="5:8" id="xYO-uW-BbP"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="suit" value="X"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="rank">
                                         <integer key="value" value="12"/>
                                     </userDefinedRuntimeAttribute>
@@ -42,6 +41,9 @@
                             <constraint firstItem="X1L-NJ-3Ls" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="l0g-0J-fDZ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="playingCardView" destination="X1L-NJ-3Ls" id="HXU-XW-dlD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
