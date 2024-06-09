@@ -17,8 +17,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view opaque="NO" contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="X1L-NJ-3Ls" customClass="PlayingCardView" customModule="PlayingCard2" customModuleProvider="target">
-                                <rect key="frame" x="16" y="149.66666666666674" width="361" height="577.66666666666652"/>
+                                <rect key="frame" x="16" y="149.66666666666669" width="361" height="577.66666666666652"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" priority="750" constant="800" id="EGM-dX-g25"/>
                                     <constraint firstAttribute="width" secondItem="X1L-NJ-3Ls" secondAttribute="height" multiplier="5:8" id="xYO-uW-BbP"/>
@@ -28,6 +29,9 @@
                                         <integer key="value" value="12"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="zXO-dj-ib9" appends="YES" id="Y7A-vx-OQE"/>
+                                </connections>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -46,6 +50,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="zXO-dj-ib9">
+                    <connections>
+                        <action selector="flipCard:" destination="BYZ-38-t0r" id="HTf-DL-J02"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="57.251908396946561" y="-2.1126760563380285"/>
         </scene>

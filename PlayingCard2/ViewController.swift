@@ -20,6 +20,15 @@ class ViewController: UIViewController {
         }
     }
     
+    
+    @IBAction func flipCard(_ sender: UITapGestureRecognizer) {
+//        playingCardView.isFaceUp = !playingCardView.isFaceUp
+        switch sender.state {
+        case .ended: playingCardView.isFaceUp = !playingCardView.isFaceUp
+        default: break
+        }
+    }
+    
     @objc func nextCard() {
         if let card = deck.draw() {
             playingCardView.rank = card.rank.order
